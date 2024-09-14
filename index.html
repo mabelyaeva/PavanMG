@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pavanmg</title>
+    <!-- подключение шрифта -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- подключение стилей -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+        document.querySelector('#burger').addEventListener('click', function(){
+            document.querySelector('#menu').classList.toggle('is-active')
+        })
+        this.document.querySelectorAll('.text').forEach(function(el){
+            el.addEventListener('click', function(event){
+                console.log(event)
+                event.target.classList.toggle('alert')
+            })
+        })
+    })
+      </script>
+</head>
+<body>
+    <header id="home">
+        <img src="img/logo.png" class="header_logo">
+        <div class="header_nav">
+            <div id="menu" class="menu is.active">
+                <ul class="header_nav_list menu_nav">
+                    <li class="menu_link"><a href="#home" class="header_nav_item">Home</a></li>
+                    <li class="menu_link"><a href="#about" class="header_nav_item">About</a></li>
+                    <li class="menu_link"><a href="#stack" class="header_nav_item">Tech Stack</a></li>
+                    <li class="menu_link"><a href="#project" class="header_nav_item">Project</a></li>
+                    <li class="menu_link"><a href="#contact" class="header_nav_item">Contact</a></li>
+                </ul>
+            </div>
+            <div id="burger" class="burger"></div>
+            <ul class="header_link_list">
+                <li>
+                    <a href="https://github.com/mabelyaeva"><img src="img/git.png"></a>
+                </li>
+                <li>
+                    <a href="https://t.me/huwwwee"><img src="img/twit.png"></a>
+                </li>
+                <li>
+                    <a href="https://t.me/huwwwee"><img src="img/in.png"></a>
+                </li>
+            </ul>
+        </div>
+        
+    </header>
+    <main>
+        <section class="section_about" id="about">
+            <div class="about_text">
+                <h2>
+                    Hi 👋,<br>
+                    My name is<br>
+                    <span class="about_gardient">Pavan MG</span><br>
+                    I build things for web
+                </h2>
+            </div>
+            <div>
+                <img src="img/hero.png">      
+            </div>
+        </section>
+        <section class="section_stack">
+            <h2 id="stack">My Tech Stack</h2>
+            <p>Technologies I've been working with recently</p>
+            <div class="stack_icon">
+                <img src="img/icon-html.svg">
+                <img src="img/icon-css.svg">
+                <img src="img/icon-js.svg">
+                <img src="img/icon-react.svg">
+                <img src="img/Vector.svg">
+                <img src="img/icon-bootstrap.svg">
+            </div>
+            <div class="stack_icon">    
+                <img src="img/icon-tailwind.svg">
+                <img src="img/icon-sass.svg">
+                <img src="img/icon-icon.svg">
+                <img src="img/icon-greensock.svg">
+                <img src="img/icon-vscode.svg">
+                <img src="img/icon-github.svg">
+            </div>
+        </section>
+        <section class="section_project">
+            <h2 class="project_title" id="project">Projects</h2>
+            <p class="project_description">Things I've built so far</p>
+            <div class="project_cards">
+                <div class="project_card">
+                    <img src="img/Rectangle1.png">
+                    <h3>Project Tile goes here</h3>
+                    <p class="card_description1">
+                        This is sample project description 
+                        random things are here in description 
+                        This is sample project lorem ipsum generator 
+                        for dummy content
+                    </p>
+                    <p class="card_description2">
+                        <span class="description_span">Tech stack :</span> HTML , JavaScript, SASS, React
+                    </p>
+                    <div class="project_info">
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_link-chain.png">Life Preview</a>
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_github-fill.png">View Code</a>
+                    </div>
+                </div>
+                
+                <div class="project_card">
+                    <img src="img/Rectangle2.png">
+                    <h3>Project Tile goes here</h3>
+                    <p class="card_description1">
+                        This is sample project description 
+                        random things are here in description 
+                        This is sample project lorem ipsum generator 
+                        for dummy content
+                    </p>
+                    <p class="card_description2">
+                        <span class="description_span">Tech stack :</span> HTML , JavaScript, SASS, React
+                    </p>
+                    <div class="project_info">
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_link-chain.png">Live Preview</a>
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_github-fill.png">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <img src="img/Rectangle3.png">
+                    <h3>Project Tile goes here</h3>
+                    <p class="card_description1">
+                        This is sample project description 
+                        random things are here in description 
+                        This is sample project lorem ipsum generator 
+                        for dummy content
+                    </p>
+                    <p class="card_description2">
+                        <span class="description_span">Tech stack :</span> HTML , JavaScript, SASS, React
+                    </p>
+                    <div class="project_info">
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_link-chain.png">Live Preview</a>
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_github-fill.png">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <img src="img/Rectangle4.png">
+                    <h3>Project Tile goes here</h3>
+                    <p class="card_description1">
+                        This is sample project description 
+                        random things are here in description 
+                        This is sample project lorem ipsum generator 
+                        for dummy content
+                    </p>
+                    <p class="card_description2">
+                        <span class="description_span">Tech stack :</span> HTML , JavaScript, SASS, React
+                    </p>
+                    <div class="project_info">
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_link-chain.png">Live Preview</a>
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_github-fill.png">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <img src="img/Rectangle5.png">
+                    <h3>Project Tile goes here</h3>
+                    <p class="card_description1">
+                        This is sample project description 
+                        random things are here in description 
+                        This is sample project lorem ipsum generator 
+                        for dummy content
+                    </p>
+                    <p class="card_description2">
+                        <span class="description_span">Tech stack :</span> HTML , JavaScript, SASS, React
+                    </p>
+                    <div class="project_info">
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_link-chain.png">Live Preview</a>
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_github-fill.png">View Code</a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <img src="img/Rectangle6.png">
+                    <h3>Project Tile goes here</h3>
+                    <p class="card_description1">
+                        This is sample project description 
+                        random things are here in description 
+                        This is sample project lorem ipsum generator 
+                        for dummy content
+                    </p>
+                    <p class="card_description2">
+                        <span class="description_span">Tech stack :</span> HTML , JavaScript, SASS, React
+                    </p>
+                    <div class="project_info">
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_link-chain.png">Live Preview</a>
+                        <a href="https://t.me/huwwwee" class="project_info_link"><img src="img/akar-icons_github-fill.png">View Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_above-line" id="contact">
+            <img src="img/logo1.png">
+            <div class="footer_contact">
+                <ul class="footer_contact_link">
+                    <li><a href="tel:+911234509876" class="contact_item">+91 12345 09876</a></li>
+                    <li><a href="mailto:info@example.com" class="contact_item">info@example.com</a></li>
+                </ul>
+                <ul class="footer_link_list">
+                    <li>
+                        <a href="https://github.com/mabelyaeva"><img src="img/Vector.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/huwwwee"><img src="img/ant-design_twitter-circle-filled.png"></a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/huwwwee"><img src="img/entypo-social_linkedin-with-circle.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_under-line">
+            <ul class="footer_nav">
+                <li><a href="#home" class="footer_nav_item">Home</a></li>
+                <li><a href="#about" class="footer_nav_item">About</a></li>
+                <li><a href="#stack" class="footer_nav_item">Technologies</a></li>
+                <li><a href="#project" class="footer_nav_item">Projects</a></li>
+                <li><a href="#contact" class="footer_nav_item">Contact</a></li>
+            </ul>
+            <p>
+                Designed and built by <span class="about_gardient">Pavan MG</span> 
+                with <span class="about_gardient">Love</span> 
+                & <span class="about_gardient">Coffee</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
